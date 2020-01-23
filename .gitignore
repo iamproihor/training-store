@@ -33,8 +33,5 @@ yarn-debug.log*
 .yarn-integrity
 master.key
 /coverage
-/config/sekrets/sekrets.development.yml
-/config/sekrets/sekrets.production.yml
-/config/sekrets/sekrets.test.yml
-/.sekrets.key
 .history/
+spec/examples.txt

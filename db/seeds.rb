@@ -110,7 +110,7 @@ else
   end
 end
 
-User.create!(email: 'user@usergmail.com ', password: 'qwerty1234', password_confirmation: 'qwerty1234', admin: false)
+User.create!(email: 'user@example.com', password: 'password', password_confirmation: 'password', admin: false)
 
 if Rails.env.development?
   require 'ffaker'
@@ -128,4 +128,4 @@ if Rails.env.development?
     book.authors << Author.all.sample(rand(1..2))
   end
 end
-User.create!(email: 'admin@admin.com', password: 'password', password_confirmation: 'password', admin: true) if Rails.env.development?
+User.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password', admin: true) if Rails.env.development?
